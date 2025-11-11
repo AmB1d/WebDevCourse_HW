@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Playlist</title>
+    
+    <link rel="stylesheet" href="audioList.css">
+</head>
+<body>
+
+    <h2>My Audio List</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cover</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+                <th>Play</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>
+                    <img src="PRNT_IMAGES/cover1.jpg" alt="Album Cover 1">
+                </td>
+                <td>Imagine</td>
+                <td>John Lennon</td>
+                <td>1971</td>
+                <td>
+                    <audio controls src="AudioFiles/song1.mp3"></audio>
+                </td>
+                <td>
+                    <a href="AudioFiles/song1.mp3" download>Download</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="PRNT_IMAGES/cover2.jpg" alt="Album Cover 2">
+                </td>
+                <td>Bohemian Rhapsody</td>
+                <td>Queen</td>
+                <td>1975</td>
+                <td>
+                    <audio controls src="AudioFiles/song2.mp3"></audio>
+                </td>
+                <td>
+                    <a href="AudioFiles/song2.mp3" download>Download</a>
+                </td>
+            </tr>
+
+            </tbody>
+    </table>
+
+</body>
+</html>

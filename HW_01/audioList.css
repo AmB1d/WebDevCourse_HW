@@ -1,0 +1,81 @@
+/* =================================
+   עיצוב כללי לדף
+   ================================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  padding-top: 2rem;
+}
+
+/* =================================
+   עיצוב הכותרת
+   ================================= */
+h2 {
+  text-align: center;
+  color: #4a56e2;
+  font-weight: 600;
+}
+
+/* =================================
+   עיצוב הטבלה
+   ================================= */
+table {
+  max-width: 900px; /* טבלה רחבה יותר כדי להכיל את הנגן */
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+/* עיצוב כותרות ותאים */
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0; /* קו הפרדה עדין בין שורות */
+  text-align: right;
+  vertical-align: middle; /* ממקם הכל באמצע הגובה של השורה */
+}
+
+thead th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+/* =================================
+   עיצוב האלמנטים החדשים
+   ================================= */
+
+/* עיצוב תמונת העטיפה */
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px; /* פינות מעוגלות לתמונה */
+  object-fit: cover; /* מוודא שהתמונה לא נמעכת */
+}
+
+/* עיצוב נגן האודיו */
+audio {
+  width: 100%;
+  max-width: 250px; /* מגביל את רוחב הנגן */
+  height: 40px; /* גובה אחיד לנגן */
+}
+
+/* עיצוב כפתור ההורדה (כדי שייראה כמו כפתור) */
+a[download] {
+  display: inline-block;
+  background-color: #4a56e2;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none; /* מסיר את הקו התחתון */
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a[download]:hover {
+  background-color: #3b46b8;
+}
